@@ -1,0 +1,26 @@
+﻿<header id="header">
+
+    <!-- Ruta base como si estubiera en el index-->
+    <img src="/app/assets/images/logoAngular.png" id="logo" />
+     
+    <div class="title-subtitle">
+        <h1><a [routerLink]="['/']">{{title}}</a></h1>
+        <p>{{description}}</p>
+    </div>
+    
+    <a class="btn-add-favorito" [routerLink]="['/crear-marcador']">
+        Crear marcador
+    </a>
+
+    <div class="clearfix"></div>
+</header>
+
+<section class="main">
+    <!-- Mostramos otro componente -->
+    <!--<favoritos-list></favoritos-list>-->
+    <router-outlet></router-outlet>
+
+    <div class="clearfix"></div>
+</section>
+
+
